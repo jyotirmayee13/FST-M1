@@ -1,0 +1,14 @@
+Status: PASS
+Time Taken: 221
+Size: 0
+Timestamp: Wed May 12 16:09:37 IST 2021
+TestStep: PropertyTransfer 1
+
+----------------- Messages ------------------------------
+Performed transfer [id]
+----------------------------------------------------
+id transferred [[null]] from [REST Request 2.Response] to [REST Request 3.keyID]
+------------ source path -------------
+$['id']
+------------ target path -------------
+

@@ -1,0 +1,66 @@
+Status: UNKNOWN
+Time Taken: 429
+Size: 249
+Timestamp: Wed May 12 16:09:36 IST 2021
+TestStep: REST Request 2
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com/user/keys
+Method: POST
+StatusCode: 422
+URL: https://api.github.com/user/keys
+
+---------------- Request ---------------------------
+Authorization: [Bearer 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]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [443]
+Content-Type: [application/json]
+
+POST https://api.github.com/user/keys HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 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
+Content-Length: 443
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+{
+  "title" : "TestKey",
+  "key" : "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoUt9JqsXim3kOUqxhX/FsH3gFxcNfLpwNa1kM6O+othhUchQK5AaYd50q8owbKc1fSCAU4NCuVrAW+IkLQ5aILgSIL1DsXH1oPd2hW1JFMQ0PnpSaZa4tjFTmd2AH3pFIDGv/946wB7U6aVrhRR1xsSDkL4jWuFDlBBNfCyh98cEEarI8hfvqvYwpRYsZijTtRkWyffM3X4UUfGIefcy7usdPC+P/tsDrejJYrHLEBfenh4mybPTWfhWt8Se1F8k8dsFC87vDXivoQ6FrtqnAlOuPJIPkDf6komWNXjA8snetroYTN5b/MxoCXP9vDkO3k5ARSpqynHlv3Qufa6rz",
+  "read-only" : true
+	
+}
+
+---------------- Response --------------------------
+X-Accepted-OAuth-Scopes: [admin:public_key, write:public_key]
+Server: [GitHub.com]
+X-RateLimit-Resource: [core]
+X-RateLimit-Used: [21]
+Access-Control-Allow-Origin: [*]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1620816343]
+Date: [Wed, 12 May 2021 10:39:36 GMT]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4979]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+Vary: [Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+#status#: [HTTP/1.1 422 Unprocessable Entity]
+Content-Length: [249]
+X-XSS-Protection: [0]
+X-OAuth-Scopes: [user:email, write:public_key]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [5D45:1CFC:5ED5F0:6A34ED:609BB068]
+
+{"message":"Validation Failed","errors":[{"resource":"PublicKey","code":"custom","field":"key","message":"key is already in use"}],"documentation_url":"https://docs.github.com/rest/reference/users#create-a-public-ssh-key-for-the-authenticated-user"}

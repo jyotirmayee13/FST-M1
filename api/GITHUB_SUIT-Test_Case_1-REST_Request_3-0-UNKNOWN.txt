@@ -1,0 +1,60 @@
+Status: UNKNOWN
+Time Taken: 282
+Size: 141
+Timestamp: Wed May 12 16:09:37 IST 2021
+TestStep: REST Request 3
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: DELETE
+StatusCode: 404
+URL: https://api.github.com/user/keys/0
+
+---------------- Request ---------------------------
+Authorization: [Bearer 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]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+Content-Type: [application/json]
+
+DELETE https://api.github.com/user/keys/0 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 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
+Content-Length: 0
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+X-Accepted-OAuth-Scopes: [admin:public_key]
+Server: [GitHub.com]
+X-RateLimit-Resource: [core]
+X-RateLimit-Used: [22]
+Access-Control-Allow-Origin: [*]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1620816343]
+Date: [Wed, 12 May 2021 10:39:37 GMT]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4978]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+Vary: [Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+#status#: [HTTP/1.1 404 Not Found]
+X-XSS-Protection: [0]
+X-OAuth-Scopes: [user:email, write:public_key]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [5D45:1CFC:5ED612:6A351D:609BB069]
+
+{"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/users#delete-a-public-ssh-key-for-the-authenticated-user"}
